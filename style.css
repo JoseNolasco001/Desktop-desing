@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 10% 90%;
+    padding: 0 10%;
+}
+
+.navbar{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(205, 205, 205);
+    gap: 20%;
+}
+    .navbar-section{
+        display: flex;
+        gap: 10%;
+    }
+
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 35px;
+            align-items: center;
+            color: #6e6e6e;
+        }
+
+    .navbar-avatar{
+    }
+        .avatar{
+            width: 50%;
+        }
+
+    
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    gap: 15%;
+}
+
+    .body-cards{
+        display: grid;
+        grid-template-rows: 5fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .bc-product-selected{
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            overflow: hidden;
+        } 
+
+        .bc-list-product{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 5%;
+        }
+
+            .producto{
+                position: relative;
+                display: flex;
+                align-items: center;
+                border-radius: 10px;
+                overflow: hidden;
+                background-size: cover;
+            }
+
+                .body img{
+                    width: 100%;
+                }
+
+                .selected{
+                    position: absolute;
+                    width: calc(100% - 3px);
+                    height: calc(100% - 3px);
+                    border-radius: 10px;
+                    background-color: rgba(255, 255, 255, 0.721);
+                    border: 2px solid orange;
+                }
+
+    .body-text{
+        /* background-color: rgb(43, 0, 255); */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+        .bt-marca{
+            color: #ff7d1b;
+            font-size: 12px;
+            font-weight: 800;
+        }
+        
+        .bt-descripcion{
+            color: #6e6e6e;
+        }
+
+        .bt-precio{
+        }
+
+            .bt-precio-actual{
+                display: flex;
+                gap: 10px;
+            }
+
+                .bt-pa-descuento{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ff7e1b23;
+                    color: #ff7d1b;
+                    border-radius: 5px;
+                    padding: 2px 5px;
+                    font-size: small;
+                    font-weight: 900;
+                }
+
+            .bt-precio-anterior{
+                font-size: small;
+                color: #6e6e6e;
+                font-weight: 100;
+                text-decoration: line-through;
+            }
+
+        .botones-accion{
+            display: flex;
+            gap: 20px;
+        }
+
+            .ba-cantidad{
+                width: 30%;
+                background-color: #f7f8fd;
+                border-radius: 5px;
+                display: flex;
+                padding: 10px;
+                gap: 33%;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+                .caja{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 900;
+                }
+
+            .btn-agregar-carro{
+                width: 50%;
+                background-color: #ff7d1b;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                gap: 15px;
+            }
+
+                .btn-carrito{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 13px;
+                    height: 13px;
+                    color: white;
+                }
